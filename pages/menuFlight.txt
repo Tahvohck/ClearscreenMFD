@@ -1,20 +1,6 @@
-
-
-[@y7]-PFD 
-
-
-
-[@y-2]-ORBIT
-
-
-
-[@y-12]-TAKEOFF
-
-
-[@y5]-LANDING                            BACK
-
-
-
-[@y-4]-                                   HOME
-
-     [@x-2]|      [@x4]|      [@x8]|       [@x-4]|      |    
+[@y80]-PFD
+[@y224]-TAKEOFF
+[@y368]-LANDING
+[@y512]-                                                       BACK
+[@y656]-ORBIT SHOULD BE ON INFO PAGE INSTEAD                   HOME
+[@y736][@x124]|[@x280]|[@x436]|[@x592]|[@x748]|
