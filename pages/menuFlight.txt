@@ -2,5 +2,5 @@
 [@y224]-TAKEOFF
 [@y368]-LANDING
 [@y512]-                                                       BACK
-[@y656]-ORBIT SHOULD BE ON INFO PAGE INSTEAD                   HOME
+[@y656]-                                                       HOME
 [@y736][@x124]|[@x280]|[@x436]|[@x592]|[@x748]|

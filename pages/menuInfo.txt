@@ -1,0 +1,6 @@
+[@y80]-ORBIT
+[@y224]-RESOURCES
+[@y368]-MISSION
+[@y512]-CREW                                                   BACK
+[@y656]-ALTITUDE                                               HOME
+[@y736][@x124]|[@x280]|[@x436]|[@x592]|[@x748]|
