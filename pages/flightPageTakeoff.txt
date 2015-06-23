@@ -1,0 +1,29 @@
+﻿   
+TAKEOFF ASSISTANT
+
+STAGE {0,-2:00} [{1:"[#009933]";;"[#CC3333]"}READY[#ffffff]]                      PITCH {2,8:0.000}°							$&$ STAGE STAGEREADY PITCH
+THROTTLE [{0:;;"[#CC4499]>>>---MECO---<<<[#00000000]"}{0:BAR- |,16}{0:;;"[#ffffff][@x-256]"}] {0,4:0%}      HEAD  {1,8:0.000}°	$&$ THROTTLE HEADING
+TWR {0,6:#0.000}/{1:;"[#CC3333]";}{2,6:#0.000}[#ffffff]                     ROLL  {3,8:0.000}°									$&$ TWR HOVERPOINTEXISTS TWRMAX ROLL
+
+
+ALTITUDE     VERTICAL SPD    GROUND SPEED    ORBITAL SPEED
+{0:SIP_9.3}m   {1:SIP_10.3}m/s   {2:SIP_10.3}m/s   {3:SIP_10.3}m/s																$&$ ALTITUDE VERTSPEED HORZVELOCITY ORBTSPEED
+
+
+APOAPSIS [{0}] $&$ ORBITBODY
+  TIME TO   {0:METyy:ddd:hh:mm:ss}  	$&$ TIMETOAPSECS ORBITBODY
+  ALTITUDE  {0:SIP_10}m					$&$ APOAPSIS
+
+
+ORBIT
+  INCLINATION  {0,7:##0.000}							$&$ INCLINATION
+  ECCENTRICITY {0,11:##0.000 000}						$&$ ECCENTRICITY
+
+
+
+
+
+
+
+{0}														$&$ NAME
+{0:KDTyyyy}-{0:KDTddd  hh:mm:ss} {1,5:"Kerb";;"Earth"}	$&$ UTSECS ISONKERBINTIME
