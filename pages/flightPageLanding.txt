@@ -1,19 +1,19 @@
 ﻿
-LANDING ASSISTANT   {0}{1} {2} ({3})												$&$ [#7777ff] SITUATION ORBITBODY BIOMEID
+LANDING ASSISTANT   {0}{1} {2} ({3})																		$&$ [#7777ff] SITUATION ORBITBODY BIOMEID
 
-{0}ALTITUDE{1} {2:SIP_9.3}m  {0}{3}{1} {4:;"[#CC3333]";}{5,7:##0.00%}{1}			$&$ [#7777ff] [#ffffff] ALTITUDE TH-HOVER HOVERPOINTEXISTS HOVERPOINT
-{0}{2,-6}{1} {3:SIP_9.2}m/s  {0}{4}{1} {5:SIP_9.2}m/s								$&$ [#7777ff] [#ffffff] VSPD VERTSPEED SURF SURFSPEED
+{0}ALTITUDE{1} {2:SIP_9.3}m  {0}{3}{1} {4:;"[#CC3333]";}{5,7:##0.00%}{1}    {0}PITCH{1} {6,8:0.000}°		$&$ [#7777ff] [#ffffff] ALTITUDE TH-HOVER HOVERPOINTEXISTS HOVERPOINT PITCH
+{0}{2,-6}{1} {3:SIP_9.2}m/s  {0}{4}{1} {5:SIP_9.2}m/s   {0}HEAD{1}  {6,8:0.000}°							$&$ [#7777ff] [#ffffff] VSPD VERTSPEED SURF SURFSPEED HEADING
 {0}T{2}{1} [{3:;;"[#CC4499]>>>---MECO---<<<[#00000000]"}{3:BAR- |,16}{3:;;"[#ffffff][@x-256]"}] {3,4:0%}	$&$ [#7777ff] [#ffffff] HROTTLE THROTTLE
-{0}T{2}{1} {3,5:#0.00}/{4,5:#0.00}  {0}G{5}{1} {6:#0.0}								$&$ [#7777ff] [#ffffff] WR TWR TWRMAX FORCE GFORCE
+{0}T{2}{1} {3,5:#0.00}/{4,5:#0.00}  {0}G{5}{1} {6:#0.0}														$&$ [#7777ff] [#ffffff] WR TWR TWRMAX FORCE GFORCE
 
 LOCATIONS
- {0}{2,-9}{1}  {3:DMSdd+ mm+ ss+ N}    {4:DMSdd+ mm+ ss+ E}							$&$ [#7777ff] [#ffffff] SELF LATITUDE LONGITUDE
- {0}{2,-9}{1}  {3:DMSdd+ mm+ ss+ N}    {4:DMSdd+ mm+ ss+ E}							$&$ [#7777ff] [#ffffff] PREDICTED PREDICTEDLANDINGLATITUDE PREDICTEDLANDINGLONGITUDE
- {0}{2,-9}{1}  {3:DMSdd+ mm+ ss+ N}    {4:DMSdd+ mm+ ss+ E}							$&$ [#7777ff] [#ffffff] TARGET LATITUDETGT LONGITUDETGT
+ {0}{2,-9}{1}  {3:DMSdd+ mm+ ss+ N}    {4:DMSdd+ mm+ ss+ E}													$&$ [#7777ff] [#ffffff] SELF LATITUDE LONGITUDE
+ {0}{2,-9}{1}  {3:DMSdd+ mm+ ss+ N}    {4:DMSdd+ mm+ ss+ E}													$&$ [#7777ff] [#ffffff] PREDICTED PREDICTEDLANDINGLATITUDE PREDICTEDLANDINGLONGITUDE
+ {0}{2,-9}{1}  {3:DMSdd+ mm+ ss+ N}    {4:DMSdd+ mm+ ss+ E}													$&$ [#7777ff] [#ffffff] TARGET LATITUDETGT LONGITUDETGT
 
 TEMPERATURES
- {0}{2,-7}{1} {3,6:##0.0}°C {4,7:000.00}   {0}{5,-7}{1} {6,6:##0.0}°C {7,7:000.00}	$&$ [#7777ff] [#ffffff] POD PODTEMPERATURE PODNETFLUX PDSKIN psktmp ---
- {0}{2,-7}{1} {3,6:##0.0}°C {4,7:000.00}   {0}{5,-7}{1} {6,6:##0.0}°C {7,7:000.00}	$&$ [#7777ff] [#ffffff] SHIELD HEATSHIELDTEMPERATURE HEATSHIELDFLUX EXTERN EXTERNALTEMPERATURE ---
+ {0}{2,-7}{1} {3,6:##0.0}°C {4,7:000.00}   {0}{5,-7}{1} {6,6:##0.0}°C {7,7:000.00}							$&$ [#7777ff] [#ffffff] POD PODTEMPERATURE PODNETFLUX PDSKIN psktmp ---
+ {0}{2,-7}{1} {3,6:##0.0}°C {4,7:000.00}   {0}{5,-7}{1} {6,6:##0.0}°C {7,7:000.00}							$&$ [#7777ff] [#ffffff] SHIELD HEATSHIELDTEMPERATURE HEATSHIELDFLUX EXTERN EXTERNALTEMPERATURE ---
 
 
 =[#ff5050ff]ALARMS[#ffffffff]=================================
