@@ -25,3 +25,4 @@
 
 {0}{2,-15}{1}{3:;;"[#00000000]"} [{4:BAR,32}] {4,7:##0.00%}										$&$ [#7777ff] [#ffffff] LISTR_26_NAME LISTR_26_MAX LISTR_26_PERCENT
 {2:;;"[#00000000]"}{3:SIP8.3}Δ | {4,10:#,0.00}/{2,-10:#,0.00} | {5,7:#0.00}t | <{6:BAR-,10}>	$&$ [#7777ff] [#ffffff] LISTR_26_MAX LISTR_26_DELTAINV LISTR_26_VAL LISTR_26_MASS LISTR_26_STAGEPERCENT
+Okay, this is too much. Do we need to have an intervention?
