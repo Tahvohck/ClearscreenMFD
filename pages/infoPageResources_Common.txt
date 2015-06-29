@@ -2,23 +2,27 @@
 {0}{2,-15}{1} [{3:BAR,32}] {3,9:##0.0000%}															$&$ [#7777ff] [#ffffff] ELECTRICITY SYSR_ELECTRICCHARGEPERCENT
   {0}{2}{1} {3,13:#,0.000}{0}/{1}{4,-13:#,0.000}													$&$ [#7777ff] [#ffffff] TOTAL SYSR_ELECTRICCHARGE SYSR_ELECTRICCHARGEMAX
   {0}{2}{1} {3,11:#,0.0000}																			$&$ [#7777ff] [#ffffff] DELTA SYSR_ELECTRICCHARGEDELTAINV
-  
+
 {0}{2,-15}{1} [{3:BAR,32}] {3,9:##0.0000%}															$&$ [#7777ff] [#ffffff] MONOPROPELLANT SYSR_MONOPROPELLANTPERCENT
   {0}{2}{1} {3,13:#,0.000}{0}/{1}{4,-13:#,0.000} {0}{5}{1} {6,9:#,0.000}t							$&$ [#7777ff] [#ffffff] TOTAL SYSR_MONOPROPELLANT SYSR_MONOPROPELLANTMAX MASS SYSR_MONOPROPELLANTMASS
   {0}{2}{1} {3,11:#,0.0000}																			$&$ [#7777ff] [#ffffff] DELTA SYSR_MONOPROPELLANTDELTAINV
-  
+
+
+
 {0}{2,-15}{1} [{3:BAR,32}] {3,9:##0.0000%}															$&$ [#7777ff] [#ffffff] LIQUIDFUEL SYSR_LIQUIDFUELPERCENT
   {0}{2}{1} {3,13:#,0.000}{0}/{1}{4,-13:#,0.000} {0}{5}{1} {6,9:#,0.000}t							$&$ [#7777ff] [#ffffff] TOTAL SYSR_LIQUIDFUEL SYSR_LIQUIDFUELMAX MASS SYSR_LIQUIDFUELMASS
   {0}{2}{1} {3,11:#,0.0000}            {0}{4}{1} {5,9:#,0.0000}t									$&$ [#7777ff] [#ffffff] DELTA SYSR_LIQUIDFUELDELTAINV STAGEMASS SYSR_LIQUIDFUELSTAGEMASS
-  
+
 {0}{2,-15}{1} [{3:BAR,32}] {3,9:##0.0000%}															$&$ [#7777ff] [#ffffff] OXIDIZER SYSR_OXIDIZERPERCENT
   {0}{2}{1} {3,13:#,0.000}{0}/{1}{4,-13:#,0.000} {0}{5}{1} {6,9:#,0.000}t							$&$ [#7777ff] [#ffffff] TOTAL SYSR_OXIDIZER SYSR_OXIDIZERMAX MASS SYSR_OXIDIZERMASS
   {0}{2}{1} {3,11:#,0.0000}            {0}{4}{1} {5,9:#,0.0000}t									$&$ [#7777ff] [#ffffff] DELTA SYSR_OXIDIZERDELTAINV STAGEMASS SYSR_OXIDIZERSTAGEMASS
-  
+
 {0}{2,-15}{1} [{3:BAR,32}] {3,9:##0.0000%}															$&$ [#7777ff] [#ffffff] SOLIDFUEL SYSR_SOLIDFUELPERCENT
   {0}{2}{1} {3,13:#,0.000}{0}/{1}{4,-13:#,0.000} {0}{5}{1} {6,9:#,0.000}t							$&$ [#7777ff] [#ffffff] TOTAL SYSR_SOLIDFUEL SYSR_SOLIDFUELMAX MASS SYSR_SOLIDFUELMASS
   {0}{2}{1} {3,11:#,0.0000}            {0}{4}{1} {5,9:#,0.0000}t									$&$ [#7777ff] [#ffffff] DELTA SYSR_SOLIDFUELDELTAINV STAGEMASS SYSR_SOLIDFUELSTAGEMASS
-  
+
+
+
 {0}{2,-15}{1} [{3:BAR,32}] {3,9:##0.0000%}															$&$ [#7777ff] [#ffffff] INTAKEAIR SYSR_INTAKEAIRPERCENT
   {0}{2}{1} {3,10:#0.000 000}{0}																	$&$ [#7777ff] [#ffffff] TOTAL SYSR_INTAKEAIR SYSR_INTAKEAIRMAX
   {0}{2}{1} {3,10:0.000 000}																		$&$ [#7777ff] [#ffffff] DELTA SYSR_INTAKEAIRDELTAINV
