@@ -1,0 +1,20 @@
+﻿
+123456789|123456789|123456789|123456789|
+ORBITING {0, -15} ALT {1:SIP_5.1}m $&$ ORBITBODY ALTITUDE
+OVEL {0:SIP6.1}m/s  INC {1,7:000.000}  ECC {2,6:00.000} $&$ ORBTSPEED INCLINATION ECCENTRICITY 
+
+AP {0:SIP6.1}m  {1:METDDDDD:hh:mm:ss} $&$ APOAPSIS TIMETOAPSECS
+PE {0:SIP6.1}m  {1:METDDDDD:hh:mm:ss}        CHART- $&$ PERIAPSIS TIMETOPESECS
+
+
+   
+IAN {0:METy:ddd:hh:mm:ss} $&$ TIMETOANEQUATORIAL 
+IDN {0:METy:ddd:hh:mm:ss} $&$ TIMETODNEQUATORIAL 
+   
+PER {0:METy:ddd:hh:mm:ss} $&$ORBPERIODSECS
+   
+   {0:"TRANSFER ";"ESCAPE ";"                                        "} {1} IN {2:METy:ddd:hh:mm:ss} $&$ ENCOUNTEREXISTS ENCOUNTERBODY ENCOUNTERTIME 
+   
+----NODE in T---------ΔV---------BURN---
+{0,16:MET+yy:ddd:hh:mm:ss}|{1,8:0.0}| {2,10:METDD:hh:mm:ss.f} $&$ MNODETIMESECS MNODEDV MNODEBURNTIMESECS 
+----------------------------------------

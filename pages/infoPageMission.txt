@@ -1,0 +1,29 @@
+
+{0}{2} {3}{1} - {4}																										$&$ [#7777ff] [#ffffff] MISSION INFO NAME
+{2,-10}{0}{3}{1} {4:KDTyyyy}-{4:KDTddd hh:mm} {5:"KERB ";;"EARTH"}  {0}{6}{1} {7:METyy}-{7:METddd} {7:METhh:mm:ss}		$&$ [#7777ff] [#ffffff] VESSELTYPE UT UTSECS ISONKERBINTIME MET METSECS
+
+{0}{2} SOI{1} {3} ({4:"Stable";"[#CC3333]Unstable"} {5}{1}) {0}SOI SIZE{1} {6:SIP_7.2}m				$&$ [#7777ff] [#ffffff] CURRENT ORBITBODY ORBITMAKESSENSE Orbit ORBITBODYSOI
+{0}{2:"NODE IN";"NO UPCOMING NODES";{1}{2:;"[#00000000]";} {3:METddd hh:mm:ss}						$&$ [#7777ff] [#ffffff] MNODEEXISTS MNODETIMESECS
+
+{0}KSC STATUS{1}																					$&$ [#7777ff] [#ffffff]
+{0}REPUTATION{1} {2,5} {0}FUNDS{1} {3,5}															$&$ [#7777ff] [#ffffff] REPUTATION FUNDS
+
+{0}LOCAL SCIENCE DATA{1}																			$&$ [#7777ff] [#ffffff]
+ {0,8:#,0.00} Mitts																					$&$ SCIENCEDATA
+
+{0}{2}{1}																							$&$ [#7777ff] [#ffffff] TARGETNAME
+{0:;"[#00000000]";}Target is a class {1} asteroid with {2} signal,									$&$ TARGETSIGNALSTRENGTH TARGETSIZECLASS TARGETSIGNALSTRENGTHCAPTION
+{0:;"[#00000000]";}last seen at {1:KDTyyyy}-{1:KDTddd, hh:mm}. ({2:METddd:hh:mm:ss} ago)			$&$ TARGETSIGNALSTRENGTH TARGETLASTOBSERVEDTIMEUT TARGETLASTOBSERVEDTIMESECS
+
+
+
+{0}AG1 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE1 AGMEMO1
+{0}AG2 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE2 AGMEMO2
+{0}AG3 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE3 AGMEMO3
+{0}AG4 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE4 AGMEMO4
+{0}AG5 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE5 AGMEMO5
+{0}AG6 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE6 AGMEMO6
+{0}AG7 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE7 AGMEMO7
+{0}AG8 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE8 AGMEMO8
+{0}AG9 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE9 AGMEMO9
+{0}AG0 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE0 AGMEMO0
