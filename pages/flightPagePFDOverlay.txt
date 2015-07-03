@@ -1,5 +1,5 @@
 ﻿
- HDG  {0,7:000.00}°                               {1,7:000.00}° PITCH 														$&$ HEADING PITCH
+ HEAD {0,7:000.00}°                               {1,7:000.00}° PITCH 														$&$ HEADING PITCH
  ROLL {0,7:000.00}°                                {1,6:00.0%}  THROT 														$&$ ROLL THROTTLE
 
   ALT {0:SIP4}m                                        {1,2:00} STAGE 														$&$ ALTITUDE STAGE
