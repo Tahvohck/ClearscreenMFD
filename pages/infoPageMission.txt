@@ -6,10 +6,10 @@
 {0}{2:"NODE IN";"NO UPCOMING NODES";{1}{2:;"[#00000000]";} {3:METddd hh:mm:ss}						$&$ [#7777ff] [#ffffff] MNODEEXISTS MNODETIMESECS
 
 {0}KSC STATUS{1}																					$&$ [#7777ff] [#ffffff]
-{0}REPUTATION{1} {2,5} {0}FUNDS{1} {3,5}															$&$ [#7777ff] [#ffffff] REPUTATION FUNDS
+{0}REPUTATION{1} {2,5:#,0} {0}FUNDS{1} {3,5:#,0}													$&$ [#7777ff] [#ffffff] REPUTATION FUNDS
 
 {0}LOCAL SCIENCE DATA{1}																			$&$ [#7777ff] [#ffffff]
- {0,8:#,0.00} Mitts																					$&$ SCIENCEDATA
+ {0,6:#,0} Mitts across {1} experiment(s)															$&$ SCIENCEDATA SCIENCECOUNT
 
 {0}{2}{1}																							$&$ [#7777ff] [#ffffff] TARGETNAME
 {0:;"[#00000000]";}Target is a class {1} asteroid with {2} signal,									$&$ TARGETSIGNALSTRENGTH TARGETSIZECLASS TARGETSIGNALSTRENGTHCAPTION
