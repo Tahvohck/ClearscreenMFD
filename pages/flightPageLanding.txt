@@ -12,7 +12,7 @@ LOCATIONS
  {0}{2,-9}{1}  {3:DMSdd+ mm+ ss+ N}    {4:DMSdd+ mm+ ss+ E}													$&$ [#7777ff] [#ffffff] TARGET LATITUDETGT LONGITUDETGT
 
 TEMPERATURES
- {0}{2,-7}{1} {3,6:##0.0}°C {4,7:000.00}   {0}{5,-7}{1} {6,6:##0.0}°C {7,7:000.00}							$&$ [#7777ff] [#ffffff] POD PODTEMPERATURE PODNETFLUX PDSKIN psktmp ---
+ {0}{2,-7}{1} {3,6:##0.0}°C {4,7:000.00}   {0}{5,-7}{1} {6,6:##0.0}°C {7,7:000.00}							$&$ [#7777ff] [#ffffff] POD PODTEMPERATURE PODNETFLUX PDSKIN PODSKINTEMP ---
  {0}{2,-7}{1} {3,6:##0.0}°C {4,7:000.00}   {0}{5,-7}{1} {6,6:##0.0}°C {7,7:000.00}							$&$ [#7777ff] [#ffffff] SHIELD HEATSHIELDTEMPERATURE HEATSHIELDFLUX EXTERN EXTERNALTEMPERATURE ---
 
 
