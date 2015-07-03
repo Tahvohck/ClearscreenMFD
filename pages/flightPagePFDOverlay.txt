@@ -16,8 +16,8 @@
 
 
 
- HSPD                                                  OSPD 
- {0:SIP5}m/s                                          {1:SIP5}m/s       													$&$ HORZVELOCITY  ORBTSPEED
+ SURF                                                  OSPD 
+ {0:SIP5}m/s                                          {1:SIP5}m/s       													$&$ SURFSPEED ORBTSPEED
  VSPD                                                  TSPD
   {0:SIP5}m/s                                         {1:SIP5}m/s       													$&$ VERTSPEED TRGTSPEED
 
