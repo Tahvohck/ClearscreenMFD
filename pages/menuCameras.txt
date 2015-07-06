@@ -1,6 +1,6 @@
       FLGT       INFO       TRGT       CAMS       PLUG     
-[@y80]-1                                                    ZOOM +
-[@y224]-2                                                    ZOOM -
+[@y80]-1                                                      PAGE
+[@y224]-2                                                      PAGE
 [@y368]-3 
 [@y512]-4                                                      BACK
 [@y656]-5                                                      HOME
