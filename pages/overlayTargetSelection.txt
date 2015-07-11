@@ -1,0 +1,2 @@
+      FLGT       INFO       TRGT       CAMS       PLUG     
+[@y896][@x124]|[@x280]|[@x436]|[@x592]|[@x708]FILTER
