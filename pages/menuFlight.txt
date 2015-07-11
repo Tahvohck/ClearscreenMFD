@@ -1,4 +1,4 @@
-[@y80]-PFD
+[@y80]-PFD/APFD
 [@y224]-TAKEOFF
 [@y368]-LANDING
 [@y512]-                                                       BACK
