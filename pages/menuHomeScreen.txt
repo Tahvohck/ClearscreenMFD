@@ -1,6 +1,7 @@
-[@y80]-
-[@y224]-
-[@y368]-
-[@y512]-
-[@y656]-
-[@y736][@x124]|[@x280]|[@x436]|[@x592]|[@x716]SLEEP
+
+
+
+          TMFD version v0.1a
+          Descendant of KSI MFD v1.2
+          
+          Running RPM v{0}												$&$ RPMVERSION
