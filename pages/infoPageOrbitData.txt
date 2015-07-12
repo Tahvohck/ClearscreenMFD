@@ -8,5 +8,5 @@
 
 {0}CURRENT ALTITUDE{1} {2,16:U2K#,0.00}km														$&$ [#7777ff] [#ffffff] ALTITUDE
 
-{0}ASCENDING NODE{1} {2,3:METy}:{2,3:METddd} {2:METhh:mm:ss}										$&$ [#7777ff] [#ffffff] TIMETOANEQUATORIAL
-{0}DECENDING NODE{1} {2,3:METy}:{2,3:METddd} {2:METhh:mm:ss}										$&$ [#7777ff] [#ffffff] TIMETODNEQUATORIAL
+{0} ASCENDING NODE{1} {2,3:METy}:{2,3:METddd} {2:METhh:mm:ss}										$&$ [#7777ff] [#ffffff] TIMETOANEQUATORIAL
+{0}DESCENDING NODE{1} {2,3:METy}:{2,3:METddd} {2:METhh:mm:ss}										$&$ [#7777ff] [#ffffff] TIMETODNEQUATORIAL
