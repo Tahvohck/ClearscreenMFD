@@ -1,6 +1,6 @@
 
 {0}{2} {3}{1} - {4}																										$&$ [#7777ff] [#ffffff] MISSION INFO NAME
-{2,-10}{0}{3}{1} {4:KDTyyyy}-{4:KDTddd hh:mm} {5:"KERB ";;"EARTH"}  {0}{6}{1} {7:METyy}-{7:METddd} {7:METhh:mm:ss}		$&$ [#7777ff] [#ffffff] VESSELTYPE UT UTSECS ISONKERBINTIME MET METSECS
+{2,-10}{0}{3}{1} {4,4:KDTy}-{4:KDTddd hh:mm} {5:"KERB ";;"EARTH"}  {0}{6}{1} {7:METyy}-{7:METddd} {7:METhh:mm:ss}		$&$ [#7777ff] [#ffffff] VESSELTYPE UT UTSECS ISONKERBINTIME MET METSECS
 
 {0}{2} SOI{1} {3} ({4:"Stable";"[#CC3333]Unstable"} {5}{1}) {0}SOI SIZE{1} {6:SIP_7.2}m				$&$ [#7777ff] [#ffffff] CURRENT ORBITBODY ORBITMAKESSENSE Orbit ORBITBODYSOI
 {0}{2:"NODE IN";"NO UPCOMING NODES";{1}{2:;"[#00000000]";} {3:METddd hh:mm:ss}						$&$ [#7777ff] [#ffffff] MNODEEXISTS MNODETIMESECS
@@ -13,7 +13,7 @@
 
 {0}{2}{1}																							$&$ [#7777ff] [#ffffff] TARGETNAME
 {0:;"[#00000000]";}Target is a class {1} asteroid with {2} signal,									$&$ TARGETSIGNALSTRENGTH TARGETSIZECLASS TARGETSIGNALSTRENGTHCAPTION
-{0:;"[#00000000]";}last seen at {1:KDTyyyy}-{1:KDTddd, hh:mm}. ({2:METddd:hh:mm:ss} ago)			$&$ TARGETSIGNALSTRENGTH TARGETLASTOBSERVEDTIMEUT TARGETLASTOBSERVEDTIMESECS
+{0:;"[#00000000]";}last seen at {1,4:KDTy}-{1:KDTddd, hh:mm}. ({2:METy:ddd hh:mm:ss} ago)			$&$ TARGETSIGNALSTRENGTH TARGETLASTOBSERVEDTIMEUT TARGETLASTOBSERVEDTIMESECS
 
 
 {0}AG1 ({2:" ON";;"OFF"}){1} {3}									$&$ [#7777ff] [#ffffff] AGSTATE1 AGMEMO1
