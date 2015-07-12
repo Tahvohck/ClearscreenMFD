@@ -16,9 +16,10 @@ RALT {0:SIP4}m                                            {1,4:00.0} G 									
 
 
  SURF                                                  OSPD 
- {0:SIP5}m/s                                          {1:SIP5}m/s       													$&$ SURFSPEED ORBTSPEED
+{0:SIP6}m/s                                          {1:SIP6}m/s       													$&$ SURFSPEED ORBTSPEED
  VSPD                                                  TSPD
-  {0:SIP5}m/s                                         {1:SIP5}m/s       													$&$ VERTSPEED TRGTSPEED
+{0:SIP6}m/s                                          {1:SIP6}m/s       													$&$ VERTSPEED TRGTSPEED
+
 
 
 
