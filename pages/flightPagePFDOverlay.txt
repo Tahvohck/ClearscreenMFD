@@ -1,16 +1,16 @@
 ﻿
-HEAD {0,7:000.00}°         {1:"DOCKING";"STAGING";} - {2:"ORBIT";"TARGT";"SURFC"}         {3,7:000.00}° PITCH				$&$ HEADING FLIGHTUIMODE SPEEDDISPLAYMODE PITCH
-ROLL {0,7:000.00}°                                  {1,6:00.0%}  THRTL 														$&$ ROLL THROTTLE
+HEAD {0,7:000.00}°         {1:"DOCKING";"STAGING";} - {2:"ORBIT";"TARGT";"SURFC"}         {3,7:000.00}° PITCH			$&$ HEADING FLIGHTUIMODE SPEEDDISPLAYMODE PITCH
+ROLL {0,7:000.00}°                                  {1,6:00.0%}  THRTL 													$&$ ROLL THROTTLE
 
- ALT {0:SIP4}m                                          {1,2:00} STAGE 														$&$ ALTITUDE STAGE
-RALT {0:SIP4}m                                            {1,4:00.0} G 														$&$ RADARALT GFORCE
+ ALT {0:SIP4}m                                          {1,2:00} STAGE 													$&$ ALTITUDE STAGE
+RALT {0:SIP4}m                                            {1,4:00.0} G 													$&$ RADARALT GFORCE
 
 
+                                                       {0:"[#CCCC00]";;}LIGHT											$&$ LIGHTS
+                                                       {0:"[#009933]";;}RCSYS											$&$ RCS
+                                                       {0:"[#009933]";;}BRAKE											$&$ BRAKES
+                                                       {0:"[#009933]";;} GEAR											$&$ GEAR
 
-{0:"[#CCCC00]";;}LIGHT                                                  							$&$ LIGHTS
-{0:"[#009933]";;}RCSYS                                                  							$&$ RCS
-{0:"[#009933]";;}BRAKE                                                  							$&$ BRAKES
-{0:"[#009933]";;}GEAR                                                   							$&$ GEAR
 
 
 
