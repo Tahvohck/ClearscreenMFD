@@ -1,0 +1,12 @@
+﻿{0}{2:"ORBITING";"IN SOI OF";}{1} {3, -15}															$&$ [#7777ff] [#ffffff] ORBITMAKESSENSE ORBITBODY
+
+{0}INCLINATION{1} {2,11:##0.000 000}°      {0}ECCENTRICITY{1} {3:#0.000 000}						$&$ [#7777ff] [#ffffff] INCLINATION ECCENTRICITY
+{0}SEMI-MAJOR{1} {2,15:U2K#,0.0}km  {0}PERIOD{1} {3,3:METy}:{3,3:METddd} {3:METhh:mm:ss.ff}			$&$ [#7777ff] [#ffffff] SEMIMAJORAXIS ORBPERIODSECS
+
+{0} APOAPSIS{1} {2,16:U2K#,0.00}km  {0}ETA{1} {3,3:METy}:{3,3:METddd} {3:METhh:mm:ss}				$&$ [#7777ff] [#ffffff] APOAPSIS TIMETOAPSECS
+{0}PERIAPSIS{1} {2,16:U2K#,0.00}km  {0}ETA{1} {3,3:METy}:{3,3:METddd} {3:METhh:mm:ss}				$&$ [#7777ff] [#ffffff] PERIAPSIS TIMETOPESECS
+
+{0}CURRENT ALTITUDE{1} {2,16:U2K#,0.00}km														$&$ [#7777ff] [#ffffff] ALTITUDE
+
+{0}ASCENDING NODE{1} {2,3:METy}:{2,3:METddd} {2:METhh:mm:ss}										$&$ [#7777ff] [#ffffff] TIMETOANEQUATORIAL
+{0}DECENDING NODE{1} {2,3:METy}:{2,3:METddd} {2:METhh:mm:ss}										$&$ [#7777ff] [#ffffff] TIMETODNEQUATORIAL
