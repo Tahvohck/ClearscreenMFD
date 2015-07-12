@@ -6,10 +6,10 @@ ROLL {0,7:000.00}°                                  {1,6:00.0%}  THRTL 								
 RALT {0:SIP4}m                                            {1,4:00.0} G 													$&$ RADARALT GFORCE
 
 
-                                                       {0:"[#CCCC00]";;}LIGHT											$&$ LIGHTS
-                                                       {0:"[#009933]";;}RCSYS											$&$ RCS
-                                                       {0:"[#009933]";;}BRAKE											$&$ BRAKES
-                                                       {0:"[#009933]";;} GEAR											$&$ GEAR
+                                                       {0:"[#CCCC00]";;"[#777777]"}LIGHT											$&$ LIGHTS
+                                                       {0:"[#009933]";;"[#777777]"}RCSYS											$&$ RCS
+                                                       {0:"[#009933]";;"[#777777]"}BRAKE											$&$ BRAKES
+                                                       {0:"[#009933]";;"[#777777]"} GEAR											$&$ GEAR
 
 
 
