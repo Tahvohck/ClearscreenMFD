@@ -1,4 +1,4 @@
-[@y896][@x84]COMMON[@x176]PG 1[@x284]PG 2[@x392]PG 3[@x524]?
+
 {0}{2,-15}{1}{3:;;"[#00000000]"} [{4:BAR,34}] {4,7:##0.00%}										$&$ [#7777ff] [#ffffff] LISTR_18_NAME LISTR_18_MAX LISTR_18_PERCENT
 {2:;;"[#00000000]"}{3:SIP8.3}Δ | {4,10:#,0.00}/{2,-10:#,0.00} | {5,7:#0.00}t | <{6:BAR-,10}>	$&$ [#7777ff] [#ffffff] LISTR_18_MAX LISTR_18_DELTAINV LISTR_18_VAL LISTR_18_MASS LISTR_18_STAGEPERCENT
 

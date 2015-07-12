@@ -1,0 +1,2 @@
+      FLGT       INFO       TRGT       CAMS       PLUG      
+[@y902][@x84]COMMON[@x176]PG 1[@x284]PG 2[@x392]PG 3[@x524]?
