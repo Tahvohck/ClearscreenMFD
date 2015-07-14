@@ -6,7 +6,7 @@
 {0} APOAPSIS{1} {2,16:U2K#,0.00}km  {0}T[sub]AP[/sub]{1} {3,3:METy}:{3,3:METddd} {3:METhh:mm:ss}	$&$ [#7777ff] [#ffffff] APOAPSIS TIMETOAPSECS
 {0}PERIAPSIS{1} {2,16:U2K#,0.00}km  {0}T[sub]PE[/sub]{1} {3,3:METy}:{3,3:METddd} {3:METhh:mm:ss}	$&$ [#7777ff] [#ffffff] PERIAPSIS TIMETOPESECS
 
-{0}CURRENT ALTITUDE{1} {2,16:U2K#,0.00}km														$&$ [#7777ff] [#ffffff] ALTITUDE
+{0}CURRENT ALTITUDE{1} {2,16:U2K#,0.00}km															$&$ [#7777ff] [#ffffff] ALTITUDE
 
 {0} ASCENDING NODE{1} {2,3:METy}:{2,3:METddd} {2:METhh:mm:ss}										$&$ [#7777ff] [#ffffff] TIMETOANEQUATORIAL
 {0}DESCENDING NODE{1} {2,3:METy}:{2,3:METddd} {2:METhh:mm:ss}										$&$ [#7777ff] [#ffffff] TIMETODNEQUATORIAL
