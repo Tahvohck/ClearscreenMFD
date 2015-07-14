@@ -1,2 +1,2 @@
       FLGT       INFO       TRGT       CAMS       PLUG      
-[@y902][@x100]DATA[@x216]MAP[@x364]|[@x512]|[@x660]|
+[@y896][@x100]DATA[@x216]MAP[@x356]|[@x512]|[@x668]|
