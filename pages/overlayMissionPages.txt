@@ -1,2 +1,2 @@
       FLGT       INFO       TRGT       CAMS       PLUG      
-[@y902][@x76]MISSION[@x162]CREW[@x294]|[@x458]|[@x606]|
+[@y902][@x76]MISSION[@x162]CREW[@x278]LOG[@x426]|[@x574]|
