@@ -1,5 +1,5 @@
 [@y80]-SELECT TARGET
-[@y224]- ???
+[@y224]-TargComp (Celestial)
 [@y368]- ???
 [@y512]- ???                                                   BACK
 [@y656]- ???                                                   HOME
