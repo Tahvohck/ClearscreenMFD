@@ -38,8 +38,8 @@ namespace TAHV_MFD
 
 		/// <summary> Get TMFD helper variables
 		/// </summary>
-		/// <param name="varname"></param>
-		/// <returns></returns>
+		/// <param name="varname">Variable name</param>
+		/// <returns>Variable value</returns>
 		public Object getCustomVariable(string varname) {
 
 			if (varname.Equals("TMFD_AVAILABLE")) {
@@ -86,17 +86,8 @@ namespace TAHV_MFD
 			}
 		}
 
-
-
-		private static void log(object o){
-			print("[TMFD] - " + o.ToString());
-		}
-		private static void tryLoadKey(ConfigNode node, string key, ref string variable) {
-			if (node.HasValue(key)) {
-				variable = node.GetValue(key);
-			}
-		}
-
+		/// <summary> Loads settings from configNode
+		/// </summary>
 		private static void loadSettings() {
 			//TMFDSettings = GameDatabase.Instance.GetConfigNode("TahvMFDConfig");
 			log("TahvMFDConfig exists? " + GameDatabase.Instance.ExistsConfigNode("TahvMFDConfig").ToString());
@@ -110,11 +101,24 @@ namespace TAHV_MFD
 					tryLoadKey(DeepSettings, "colorTagRed", ref COLRed);
 					tryLoadKey(DeepSettings, "colorTagGreen", ref COLGreen);
 					tryLoadKey(DeepSettings, "colorTagYellow", ref COLYellow);
+
 					tryLoadKey(DeepSettings, "version", ref version);
 
 					log(DeepSettings);
 				} else { log("DeepSettings is null"); }
 			} else { log("TMFDSettings is null");}
+		}
+
+		// ----------
+		// Helper functions
+		// ----------
+		private static void log(object o) {
+			print("[TMFD] - " + o.ToString());
+		}
+		private static void tryLoadKey(ConfigNode node, string key, ref string variable) {
+			if (node.HasValue(key)) {
+				variable = node.GetValue(key);
+			}
 		}
 	}
 }
