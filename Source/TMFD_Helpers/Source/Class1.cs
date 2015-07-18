@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-//using RPMC = JSI.RasterPropMonitorComputer;
+using RPMC = JSI.RasterPropMonitorComputer;
 
 namespace TAHV_MFD
 {
@@ -22,6 +22,8 @@ namespace TAHV_MFD
 		private static string COLYellow	= "";
 
 		private static string version = "";
+
+		private static RPMC RPMComputer = null;
 		
 		// ----------
 		// Startup
@@ -29,6 +31,7 @@ namespace TAHV_MFD
 		public override void OnAwake() {
 
 			loadSettings();
+			RPMComputer = RPMC.Instantiate(this.part);
 
 			instantiated = true;
 		}
@@ -38,7 +41,6 @@ namespace TAHV_MFD
 		/// <param name="varname"></param>
 		/// <returns></returns>
 		public Object getCustomVariable(string varname) {
-			//RPMC RPMinstance = this.part.Modules.GetModules<RPMC>()[0];
 
 			if (varname.Equals("TMFD_AVAILABLE")) {
 				if (instantiated) {	return 1;} 
@@ -70,9 +72,13 @@ namespace TAHV_MFD
 				case "YELLOW":
 					return COLYellow;
 
-				// Other stuff
-				case "WARNBLINK":
-					return COLRed;
+				// Returns either transparent or the color defined in colorTagRed
+				// wrapping this in brackets to prevent readability problems.
+				case "WARNBLINK": {
+					bool blink = (Int32)RPMComputer.ProcessVariable("PERIOD_1HZ", -1) == 1;
+					if (blink) return COLRed;
+					else return "[#00000000]";
+				}
 
 				// Pretty much anything not implmented.
 				default:
