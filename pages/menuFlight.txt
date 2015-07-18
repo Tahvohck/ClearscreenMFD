@@ -1,6 +1,6 @@
 [@y80]-PFD/[#777777]APFD
 [@y224]-TAKEOFF
 [@y368]-LANDING
-[@y512]-                                                       BACK
+[@y512]-DPAI                                                   BACK
 [@y656]-                                                       HOME
 [@y736][@x124]|[@x280]|[@x436]|[@x592]|[@x748]|
