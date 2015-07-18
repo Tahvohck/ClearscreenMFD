@@ -55,7 +55,7 @@ namespace TAHV_MFD
 				// Debug dump
 				case "DSDUMP":
 					string tmp = "", DSDUMP = DeepSettings.ToString();
-					for (int i = 0; i < DSDUMP.Length; i += 40) { tmp += COLYellow + DSDUMP.Substring(i, Math.Min(40, DSDUMP.Length - i)) + Environment.NewLine; }
+					for (int i = 0; i < DSDUMP.Length; i += 40) { tmp += DSDUMP.Substring(i, Math.Min(40, DSDUMP.Length - i)) + Environment.NewLine; }
 					tmp = tmp.Replace("[#", "[[]#");
 					return tmp;
 				// Various colors
