@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMFD_Helpers", "TMFD_Helpers\TMFD_Helpers.csproj", "{58754A43-FE4E-4E15-A340-AAFF7E687585}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release x86|Any CPU = Release x86|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58754A43-FE4E-4E15-A340-AAFF7E687585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58754A43-FE4E-4E15-A340-AAFF7E687585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58754A43-FE4E-4E15-A340-AAFF7E687585}.Release x86|Any CPU.ActiveCfg = Release x86|Any CPU
+		{58754A43-FE4E-4E15-A340-AAFF7E687585}.Release x86|Any CPU.Build.0 = Release x86|Any CPU
+		{58754A43-FE4E-4E15-A340-AAFF7E687585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58754A43-FE4E-4E15-A340-AAFF7E687585}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
