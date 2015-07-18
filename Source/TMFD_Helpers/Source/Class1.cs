@@ -36,6 +36,61 @@ namespace TAHV_MFD
 			instantiated = true;
 		}
 
+		// ----------
+		// Variable parsers
+		// ----------
+		private string SASStringShort() {
+			if (!vessel.Autopilot.Enabled)
+				return "<OFF>"; // SAS off
+
+			string tmp = COLGreen;
+			// If it's not on, check mode
+			switch (vessel.Autopilot.Mode) {
+				#region Cases
+				case (VesselAutopilot.AutopilotMode.StabilityAssist):
+					tmp += "STABL";
+					break;
+				case (VesselAutopilot.AutopilotMode.Maneuver):
+					tmp += "MANUV";
+					break;
+				case (VesselAutopilot.AutopilotMode.Prograde):
+					tmp += "PROGR";
+					break;
+				case (VesselAutopilot.AutopilotMode.Retrograde):
+					tmp += "RETRO";
+					break;
+				case (VesselAutopilot.AutopilotMode.Normal):
+					tmp += "NORML";
+					break;
+				case (VesselAutopilot.AutopilotMode.Antinormal):
+					tmp += "ANORM";
+					break;
+				case (VesselAutopilot.AutopilotMode.RadialIn):
+					tmp += "RAD -";
+					break;
+				case (VesselAutopilot.AutopilotMode.RadialOut):
+					tmp += "RAD +";
+					break;
+				case (VesselAutopilot.AutopilotMode.Target):
+					tmp += "TARGT";
+					break;
+				case (VesselAutopilot.AutopilotMode.AntiTarget):
+					tmp += "ATARG";
+					break;
+				#endregion
+				default:
+					tmp = COLRed + "<???>";
+					break;
+			}
+
+			tmp += COLNone;
+			// End result
+			// Off: <OFF>
+			// Known mode: COLGreen + 5-letter mode string + COLNone
+			// Unknown mode: COLRed + <???> + COLNone
+			return tmp; 
+		}
+
 		/// <summary> Get TMFD helper variables
 		/// </summary>
 		/// <param name="varname">Variable name</param>
@@ -79,6 +134,9 @@ namespace TAHV_MFD
 					if (blink) return COLRed;
 					else return "[#00000000]";
 				}
+
+				case "SASSTRING5":
+					return SASStringShort();
 
 				// Pretty much anything not implmented.
 				default:
