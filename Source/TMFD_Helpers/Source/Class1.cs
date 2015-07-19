@@ -201,9 +201,9 @@ namespace TAHV_MFD
 					return SASStringLong();
 
 				case "MECO_OR_THROTTLE":
-					return MECOStringOrThrottle("[#CC4499]>>>---MECO---<<<");
+					return MECOStringOrThrottle("[#CC4499]>>>---MECO---<<<" + COLNone);
 				case "LONGMECO_OR_THROTTLE":
-					return MECOStringOrThrottle("[#CC4499]>>>----------MECO----------<<<");
+					return MECOStringOrThrottle("[#CC4499]>>>----------MECO----------<<<" + COLNone);
 
 				// Pretty much anything not implmented.
 				default:
