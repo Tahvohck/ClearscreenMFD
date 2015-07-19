@@ -142,6 +142,16 @@ namespace TAHV_MFD
 			return tmp;
 		}
 
+		/// <summary>Logic to return either a MECO string or the throttle level
+		/// </summary>
+		/// <param name="MecoString">The string to use if throttle is 0%</param>
+		private object MECOStringOrThrottle(string MecoString) {
+			if (vessel.ctrlState.mainThrottle == 0.0f) {
+				return MecoString;
+			}
+			return vessel.ctrlState.mainThrottle;
+		}
+
 		/// <summary> Get TMFD helper variables
 		/// </summary>
 		/// <param name="varname">Variable name</param>
@@ -190,6 +200,11 @@ namespace TAHV_MFD
 					return SASStringShort();
 				case "SASSTRING16":
 					return SASStringLong();
+
+				case "MECO_OR_THROTTLE":
+					return MECOStringOrThrottle("[#CC4499]>>>---MECO---<<<");
+				case "LONGMECO_OR_THROTTLE":
+					return MECOStringOrThrottle("[#CC4499]>>>----------MECO----------<<<");
 
 				// Pretty much anything not implmented.
 				default:
