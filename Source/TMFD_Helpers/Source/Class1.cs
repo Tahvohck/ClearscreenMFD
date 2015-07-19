@@ -13,8 +13,10 @@ namespace TAHV_MFD
 		// Variables
 		// ----------
 		private bool instantiated = false;
+		private static RPMC RPMComputer = null;
 		private static ConfigNode TMFDSettings = null;
 		private static ConfigNode DeepSettings = null;
+		
 		private static string COLHighlight	= "";
 		private static string COLNone	= "";
 		private static string COLRed	= "";
@@ -23,7 +25,9 @@ namespace TAHV_MFD
 
 		private static string version = "";
 
-		private static RPMC RPMComputer = null;
+		private static string shortMECOString = "";
+		private static string longMECOString = "";
+
 		
 		// ----------
 		// Startup
@@ -201,9 +205,9 @@ namespace TAHV_MFD
 					return SASStringLong();
 
 				case "MECO_OR_THROTTLE":
-					return MECOStringOrThrottle("[#CC4499]>>>---MECO---<<<" + COLNone);
+					return MECOStringOrThrottle(shortMECOString + COLNone);
 				case "LONGMECO_OR_THROTTLE":
-					return MECOStringOrThrottle("[#CC4499]>>>----------MECO----------<<<" + COLNone);
+					return MECOStringOrThrottle(longMECOString + COLNone);
 
 				// Pretty much anything not implmented.
 				default:
@@ -228,6 +232,9 @@ namespace TAHV_MFD
 					tryLoadKey(DeepSettings, "colorTagYellow", ref COLYellow);
 
 					tryLoadKey(DeepSettings, "version", ref version);
+
+					tryLoadKey(DeepSettings, "shortMECOString", ref shortMECOString);
+					tryLoadKey(DeepSettings, "longMECOString", ref longMECOString);
 
 					log(DeepSettings);
 				} else { log("DeepSettings is null"); }
