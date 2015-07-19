@@ -1,15 +1,15 @@
 ﻿
-HEAD {0,7:000.00}°         {1:"DOCKING";"STAGING";} - {2:"ORBIT";"TARGT";"SURFC"}         {3,7:000.00}° PITCH			$&$ HEADING FLIGHTUIMODE SPEEDDISPLAYMODE PITCH
-ROLL {0,7:000.00}°                                  {1,6:00.0%}  THRTL 													$&$ ROLL THROTTLE
+HEAD {0,7:000.00}°         {1:"DOCKING";"STAGING";} - {2:"ORBIT";"TARGT";"SURFC"}         {3,7:000.00}° PITCH	$&$ HEADING FLIGHTUIMODE SPEEDDISPLAYMODE PITCH
+ROLL {0,7:000.00}°                                  {1,6:00.0%}  THRTL 											$&$ ROLL THROTTLE
 
- ALT {0:SIP4}m                                          {1,2:00} STAGE 													$&$ ALTITUDE STAGE
-RALT {0:SIP4}m                                            {1,4:00.0} G 													$&$ RADARALT GFORCE
+ ALT {0:SIP4}m                                          {1,2:00} STAGE 											$&$ ALTITUDE STAGE
+RALT {0:SIP4}m                                            {1,4:00.0} G 											$&$ RADARALT GFORCE
 
 
-                                                       {0:"[#CCCC00]";;"[#777777]"}LIGHT								$&$ LIGHTS
-                                                       {0:"[#009933]";;"[#777777]"}RCSYS								$&$ RCS
-                                                       {0:"[#009933]";;"[#777777]"}BRAKE								$&$ BRAKES
-                                                       {0:"[#009933]";;"[#777777]"} GEAR								$&$ GEAR
+                                                       {0}{1:;;"[#777777]"}LIGHT								$&$ TMFD_YELLOW LIGHTS
+                                                       {0}{1:;;"[#777777]"}RCSYS								$&$ TMFD_GREEN RCS
+                                                       {0}{1:;;"[#777777]"}BRAKE								$&$ TMFD_GREEN BRAKES
+                                                       {0}{1:;;"[#777777]"} GEAR								$&$ TMFD_GREEN GEAR
 
 
                                                       [@y-16]FMODE-[@y0]
@@ -17,13 +17,13 @@ RALT {0:SIP4}m                                            {1,4:00.0} G 									
 
 
  SURF                                                  OSPD 
-{0:SIP6}m/s                                          {1:SIP6}m/s       													$&$ SURFSPEED ORBTSPEED
+{0:SIP6}m/s                                          {1:SIP6}m/s       											$&$ SURFSPEED ORBTSPEED
  VSPD                                                  TSPD
-{0:SIP6}m/s                                          {1:SIP6}m/s       													$&$ VERTSPEED TRGTSPEED
+{0:SIP6}m/s                                          {1:SIP6}m/s       											$&$ VERTSPEED TRGTSPEED
 
 
 
 
-SAS MODE: {0:;;"OFF[#00000000]"}{1:"STABILITY ASSIST";;}{2:"HOLD PROGRADE";"HOLD RETROGRADE";;}{3:"HOLD NORMAL";"HOLD ANTI-NORMAL";}{4:"HOLD RADIAL IN";"HOLD RADIAL OUT";}{5:"HOLD TARGET";"HOLD RETROTARGET";}{6:"HOLD NODE";;}							$&$ SAS SASMODESTABILITY SASMODEPROGRADE SASMODENORMAL SASMODERADIAL SASMODETARGET SASMODEMANEUVER
+SAS MODE: {0}																									$&$ TMFD_SASSTRING16
 -----NODE---------------------------------------------------
- T{0,18:MET+yy:ddd:hh:mm:ss.f} | {1,10:#,0.00} ΔV | EBL {2,3:METD}d {2,10:METhh:mm:ss.f} 								$&$ MNODETIMESECS MNODEDV MNODEBURNTIMESECS 
+ T{0,18:MET+yy:ddd:hh:mm:ss.f} | {1,10:#,0.00} ΔV | EBL {2,3:METD}d {2,10:METhh:mm:ss.f} 						$&$ MNODETIMESECS MNODEDV MNODEBURNTIMESECS 
