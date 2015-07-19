@@ -90,6 +90,57 @@ namespace TAHV_MFD
 			// Unknown mode: COLRed + <???> + COLNone
 			return tmp; 
 		}
+		private string SASStringLong() {
+			if (!vessel.Autopilot.Enabled)
+				return "<OFF>           "; // SAS off
+
+			string tmp = COLGreen;
+			// If it's not on, check mode
+			switch (vessel.Autopilot.Mode) {
+				#region Cases
+				case (VesselAutopilot.AutopilotMode.StabilityAssist):
+					tmp += "Stability assist";
+					break;
+				case (VesselAutopilot.AutopilotMode.Maneuver):
+					tmp += "Hold Maneuver   ";
+					break;
+				case (VesselAutopilot.AutopilotMode.Prograde):
+					tmp += "Hold Prograde   ";
+					break;
+				case (VesselAutopilot.AutopilotMode.Retrograde):
+					tmp += "Hold Retrograde ";
+					break;
+				case (VesselAutopilot.AutopilotMode.Normal):
+					tmp += "Hold To Normal  ";
+					break;
+				case (VesselAutopilot.AutopilotMode.Antinormal):
+					tmp += "Hold Anti-Normal";
+					break;
+				case (VesselAutopilot.AutopilotMode.RadialIn):
+					tmp += "Hold Radial In  ";
+					break;
+				case (VesselAutopilot.AutopilotMode.RadialOut):
+					tmp += "Hold Radial Out ";
+					break;
+				case (VesselAutopilot.AutopilotMode.Target):
+					tmp += "Hold At Target  ";
+					break;
+				case (VesselAutopilot.AutopilotMode.AntiTarget):
+					tmp += "Hold Anti-Target";
+					break;
+				#endregion
+				default:
+					tmp = COLRed + "<???>           ";
+					break;
+			}
+
+			tmp += COLNone;
+			// End result
+			// Off: <OFF>
+			// Known mode: COLGreen + 5-letter mode string + COLNone
+			// Unknown mode: COLRed + <???> + COLNone
+			return tmp;
+		}
 
 		/// <summary> Get TMFD helper variables
 		/// </summary>
@@ -137,6 +188,8 @@ namespace TAHV_MFD
 
 				case "SASSTRING5":
 					return SASStringShort();
+				case "SASSTRING16":
+					return SASStringLong();
 
 				// Pretty much anything not implmented.
 				default:
