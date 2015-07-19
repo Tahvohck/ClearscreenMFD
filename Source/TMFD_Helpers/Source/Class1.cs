@@ -191,8 +191,7 @@ namespace TAHV_MFD
 				// Returns either transparent or the color defined in colorTagRed
 				// wrapping this in brackets to prevent readability problems.
 				case "WARNBLINK": {
-					bool blink = (Int32)RPMComputer.ProcessVariable("PERIOD_1HZ", -1) == 1;
-					if (blink) return COLRed;
+					if ((Int32)RPMComputer.ProcessVariable("PERIOD_1HZ", -1) == 1) return COLRed;
 					else return "[#00000000]";
 				}
 
