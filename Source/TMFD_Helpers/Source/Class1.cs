@@ -66,10 +66,10 @@ namespace TAHV_MFD
 					tmp += "ANORM";
 					break;
 				case (VesselAutopilot.AutopilotMode.RadialIn):
-					tmp += "RAD -";
+					tmp += "RAD +"; //This is flipped with Radial In in the code. Don't ask me, Squad set it up that way.
 					break;
 				case (VesselAutopilot.AutopilotMode.RadialOut):
-					tmp += "RAD +";
+					tmp += "RAD -"; //This is flipped with Radial Out in the code. Don't ask me, Squad set it up that way.
 					break;
 				case (VesselAutopilot.AutopilotMode.Target):
 					tmp += "TARGT";
@@ -117,10 +117,10 @@ namespace TAHV_MFD
 					tmp += "Hold Anti-Normal";
 					break;
 				case (VesselAutopilot.AutopilotMode.RadialIn):
-					tmp += "Hold Radial In  ";
+					tmp += "Hold Radial Out "; //This is flipped with Radial In in the code. Don't ask me, Squad set it up that way.
 					break;
 				case (VesselAutopilot.AutopilotMode.RadialOut):
-					tmp += "Hold Radial Out ";
+					tmp += "Hold Radial In  "; //This is flipped with Radial Out in the code. Don't ask me, Squad set it up that way.
 					break;
 				case (VesselAutopilot.AutopilotMode.Target):
 					tmp += "Hold At Target  ";
