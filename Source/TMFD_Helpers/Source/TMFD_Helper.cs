@@ -16,24 +16,22 @@ namespace TAHV_MFD
 		private static RPMC RPMComputer = null;
 		private static ConfigNode TMFDSettings = null;
 		private static ConfigNode DeepSettings = null;
-		
-		private static string COLHighlight	= "";
-		private static string COLNone	= "";
-		private static string COLRed	= "";
-		private static string COLGreen	= "";
-		private static string COLYellow	= "";
 
-		private static string version = "";
+		private static string COLHighlight			= "";
+		private static string COLNone				= "";
+		private static string COLRed				= "";
+		private static string COLGreen				= "";
+		private static string COLYellow				= "";
+		private static string version				= "";
+		private static string shortMECOString		= "";
+		private static string longMECOString		= "";
 
-		private static string shortMECOString = "";
-		private static string longMECOString = "";
 
-		
 		// ----------
 		// Startup
 		// ----------
 		public override void OnAwake() {
-
+		
 			loadSettings();
 			RPMComputer = RPMC.Instantiate(this.part);
 
@@ -161,7 +159,7 @@ namespace TAHV_MFD
 		/// <param name="varname">Variable name</param>
 		/// <returns>Variable value</returns>
 		public Object getCustomVariable(string varname) {
-
+		
 			if (varname.Equals("TMFD_AVAILABLE")) {
 				if (instantiated) {	return 1;} 
 				else { return -1; }
@@ -224,23 +222,21 @@ namespace TAHV_MFD
 			if (null != TMFDSettings) {
 				DeepSettings = TMFDSettings.GetNode("DeepSettings");
 				if (null != DeepSettings) {
-
+		
 					tryLoadKey(DeepSettings, "colorTagHighlight", ref COLHighlight);
 					tryLoadKey(DeepSettings, "colorTagDefault", ref COLNone);
 					tryLoadKey(DeepSettings, "colorTagRed", ref COLRed);
 					tryLoadKey(DeepSettings, "colorTagGreen", ref COLGreen);
 					tryLoadKey(DeepSettings, "colorTagYellow", ref COLYellow);
-
 					tryLoadKey(DeepSettings, "version", ref version);
-
 					tryLoadKey(DeepSettings, "shortMECOString", ref shortMECOString);
 					tryLoadKey(DeepSettings, "longMECOString", ref longMECOString);
-
+		
 					log(DeepSettings);
 				} else { log("DeepSettings is null"); }
 			} else { log("TMFDSettings is null");}
 		}
-
+		
 		// ----------
 		// Helper functions
 		// ----------
