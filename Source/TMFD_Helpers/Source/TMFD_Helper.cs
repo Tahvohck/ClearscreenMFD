@@ -25,6 +25,9 @@ namespace TAHV_MFD
 		private static string version				= "";
 		private static string shortMECOString		= "";
 		private static string longMECOString		= "";
+		private static string clampedRadarString	= "";
+
+		private static int maxRadar = 10000;
 
 
 		// ----------
@@ -207,6 +210,14 @@ namespace TAHV_MFD
 				case "LONGMECO_OR_THROTTLE":
 					return MECOStringOrThrottle(longMECOString + COLNone);
 
+				case "CLAMPEDRADAR":
+				{
+					if (vessel.terrainAltitude <= maxRadar)
+						return vessel.terrainAltitude;
+					else
+						return clampedRadarString;
+				}
+
 				// Pretty much anything not implmented.
 				default:
 					return "NotCoded";
@@ -222,6 +233,8 @@ namespace TAHV_MFD
 			if (null != TMFDSettings) {
 				DeepSettings = TMFDSettings.GetNode("DeepSettings");
 				if (null != DeepSettings) {
+					string tmp, deadtmp;
+					tmp = deadtmp = "HorseBatteryStaple";
 		
 					tryLoadKey(DeepSettings, "colorTagHighlight", ref COLHighlight);
 					tryLoadKey(DeepSettings, "colorTagDefault", ref COLNone);
@@ -231,7 +244,21 @@ namespace TAHV_MFD
 					tryLoadKey(DeepSettings, "version", ref version);
 					tryLoadKey(DeepSettings, "shortMECOString", ref shortMECOString);
 					tryLoadKey(DeepSettings, "longMECOString", ref longMECOString);
-		
+					tryLoadKey(DeepSettings, "clampedRadarString", ref clampedRadarString);
+
+					tryLoadKey(DeepSettings, "clampRadarAt", ref tmp);
+					if (!tmp.Equals(deadtmp)) {
+						try {
+							int.Parse(tmp);
+						}
+						catch (FormatException) {
+							log("Parsing problem: [" + tmp + "] is not parsable to an integer.");
+						}
+						finally	{
+							tmp = deadtmp;
+						}
+					}
+
 					log(DeepSettings);
 				} else { log("DeepSettings is null"); }
 			} else { log("TMFDSettings is null");}
