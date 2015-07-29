@@ -2,8 +2,8 @@
 HEAD {0,7:000.00}°         {1:"DOCKING";"STAGING";} - {2:"ORBIT";"TARGT";"SURFC"}         {3,7:000.00}° PITCH	$&$ HEADING FLIGHTUIMODE SPEEDDISPLAYMODE PITCH
 ROLL {0,7:000.00}°                                  {1,6:00.0%}  THRTL 											$&$ ROLL THROTTLE
 
- ALT {0:SIP4}m                                          {1,2:00} STAGE 											$&$ ALTITUDE STAGE
-RALT {0:SIP4}m                                            {1,4:00.0} G 											$&$ RADARALT GFORCE
+ ALT {0:SIP6}m                                        {1,2:00} STAGE 											$&$ ALTITUDE STAGE
+RALT {0,6:SIP6}m                                          {1,4:00.0} G 											$&$ TMFD_CLAMPEDRADAR GFORCE
 
 
                                                        {0}{1:;;"[#777777]"}LIGHT								$&$ TMFD_YELLOW LIGHTS

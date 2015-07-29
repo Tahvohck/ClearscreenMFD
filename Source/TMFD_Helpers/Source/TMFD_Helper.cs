@@ -216,8 +216,9 @@ namespace TAHV_MFD
 
 				case "CLAMPEDRADAR":
 				{
-					if (vessel.terrainAltitude <= maxRadar)
-						return vessel.terrainAltitude;
+					double RadarAlt = vessel.mainBody.GetAltitude(vessel.CoM) - vessel.terrainAltitude;
+					if (RadarAlt <= maxRadar)
+						return RadarAlt;
 					else
 						return clampedRadarString;
 				}
