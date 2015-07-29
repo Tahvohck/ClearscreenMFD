@@ -255,7 +255,7 @@ namespace TAHV_MFD
 							int.Parse(tmp);
 						}
 						catch (FormatException) {
-							log("Parsing problem: [" + tmp + "] is not parsable to an integer.");
+							log("Parsing problem: [" + tmp + "] is not parsable to an integer (clampRadarAt).");
 						}
 						finally	{
 							tmp = deadtmp;
