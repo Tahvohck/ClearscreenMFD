@@ -260,11 +260,17 @@ namespace TAHV_MFD
 		private static void log(object o) {
 			print("[TMFD] - " + o.ToString());
 		}
+		/// <summary>Attempts to load a generic key.</summary>
+		/// <param name="node">Node to load from</param> <param name="key">Key to look for</param> <param name="variable">Variable reference to load into</param>
 		private static void tryLoadKey(ConfigNode node, string key, ref string variable) {
 			if (node.HasValue(key)) {
 				variable = node.GetValue(key);
+			} else {
+				log("Could not find key \""+ key +"\" in settings.");
 			}
 		}
+		/// <summary> Attempts to load an integer key, logs any problems.</summary>
+		/// <param name="node">Node to load from</param> <param name="key">Key to look for</param> <param name="variable">Integer variable reference to load into</param>
 		private static void tryLoadIntKey(ConfigNode node, string key, ref int variable) {
 			string tmp = "";
 			nStyle NumStyles = nStyle.Integer | nStyle.AllowThousands; //Trailing + leading whitspace, group seperator, leading sign.
