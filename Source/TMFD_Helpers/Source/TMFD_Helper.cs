@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using RPMC = JSI.RasterPropMonitorComputer;
+using nStyle = System.Globalization.NumberStyles;
 
 namespace TAHV_MFD
 {
@@ -236,9 +237,6 @@ namespace TAHV_MFD
 			if (null != TMFDSettings) {
 				DeepSettings = TMFDSettings.GetNode("DeepSettings");
 				if (null != DeepSettings) {
-					string tmp, deadtmp;
-					tmp = deadtmp = "HorseBatteryStaple";
-		
 					tryLoadKey(DeepSettings, "colorTagHighlight", ref COLHighlight);
 					tryLoadKey(DeepSettings, "colorTagDefault", ref COLNone);
 					tryLoadKey(DeepSettings, "colorTagRed", ref COLRed);
@@ -249,18 +247,7 @@ namespace TAHV_MFD
 					tryLoadKey(DeepSettings, "longMECOString", ref longMECOString);
 					tryLoadKey(DeepSettings, "clampedRadarString", ref clampedRadarString);
 
-					tryLoadKey(DeepSettings, "clampRadarAt", ref tmp);
-					if (!tmp.Equals(deadtmp)) {
-						try {
-							int.Parse(tmp);
-						}
-						catch (FormatException) {
-							log("Parsing problem: [" + tmp + "] is not parsable to an integer (clampRadarAt).");
-						}
-						finally	{
-							tmp = deadtmp;
-						}
-					}
+					tryLoadIntKey(DeepSettings, "clampRadarAt", ref maxRadar);
 
 					log(DeepSettings);
 				} else { log("DeepSettings is null"); }
@@ -276,6 +263,23 @@ namespace TAHV_MFD
 		private static void tryLoadKey(ConfigNode node, string key, ref string variable) {
 			if (node.HasValue(key)) {
 				variable = node.GetValue(key);
+			}
+		}
+		private static void tryLoadIntKey(ConfigNode node, string key, ref int variable) {
+			string tmp = "";
+			nStyle NumStyles = nStyle.Integer | nStyle.AllowThousands; //Trailing + leading whitspace, group seperator, leading sign.
+
+			tryLoadKey(node, key, ref tmp);
+			if (!tmp.Equals("")) {
+				try {
+					variable = int.Parse(tmp, NumStyles);
+				}
+				catch (FormatException) {
+					log("Parsing problem: [" + tmp + "] is not parsable to an integer (" + key + ").");
+				}
+				catch (OverflowException) {
+					log("Parsing problem: [" + tmp + "] overflows integers (" + key + ").");
+				}
 			}
 		}
 	}
