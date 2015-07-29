@@ -1,7 +1,7 @@
 
 
 
-          TMFD version v0.1a
+          TMFD version {0}												$&$ TMFD_VERSION
           Descendant of KSI MFD v1.2
           
           Running RPM v{0}												$&$ RPMVERSION
