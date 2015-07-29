@@ -18,15 +18,15 @@ namespace TAHV_MFD
 		private static ConfigNode TMFDSettings = null;
 		private static ConfigNode DeepSettings = null;
 
-		private static string COLHighlight			= "";
-		private static string COLNone				= "";
-		private static string COLRed				= "";
-		private static string COLGreen				= "";
-		private static string COLYellow				= "";
-		private static string version				= "";
-		private static string shortMECOString		= "";
-		private static string longMECOString		= "";
-		private static string clampedRadarString	= "";
+		private static string COLHighlight			= "[#7777ff]";
+		private static string COLNone				= "[#ffffff]";
+		private static string COLRed				= "[#CC3333]";
+		private static string COLGreen				= "[#009933]";
+		private static string COLYellow				= "[#CCCC00]";
+		private static string version				= "v0.6.159 alpha";
+		private static string shortMECOString		= "[#CC4499]>>>---MECO---<<<";
+		private static string longMECOString		= "[#CC4499]>>>----------MECO----------<<<";
+		private static string clampedRadarString	= "-----";
 
 		private static int maxRadar = 10000;
 
